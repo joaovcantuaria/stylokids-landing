@@ -10,8 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
-    sections.forEach(section => observer.observe(section));
+    }, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
+    sections.forEach(section => {
+        // If section is already in viewport on load, reveal immediately
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            section.classList.add('visible');
+        } else {
+            observer.observe(section);
+        }
+    });
 
     // ===== Staggered button entry =====
     const buttons = document.querySelectorAll('.seller-btn');
@@ -68,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (current >= target) clearInterval(interval);
                 }, 200);
             }
-        }, { threshold: 0.5 });
+        }, { threshold: 0.1 });
         counterObserver.observe(numberEl);
     }
 
