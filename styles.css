@@ -501,7 +501,7 @@ body {
 .team-card-3 { box-shadow: 0 8px 25px rgba(46, 204, 64, 0.12); }
 .team-card-3:hover { border-color: var(--green); }
 .team-avatar {
-    width: 80px; height: 80px;
+    width: 160px; height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -512,10 +512,10 @@ body {
     flex-shrink: 0;
 }
 .team-avatar-img {
-    width: 80px;
-    height: 80px;
-    max-width: 80px;
-    max-height: 80px;
+    width: 160px;
+    height: 160px;
+    max-width: 160px;
+    max-height: 160px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
