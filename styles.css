@@ -126,7 +126,7 @@ body {
     position: absolute;
     bottom: -2px; left: 0;
     width: 100%; height: 60px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23FFFFFF' d='M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") no-repeat bottom center;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23E8F9FD' d='M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") no-repeat bottom center;
     background-size: cover;
     z-index: 1;
 }
@@ -308,7 +308,7 @@ body {
     position: absolute;
     bottom: -2px; left: 0;
     width: 100%; height: 60px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23FFFFFF' d='M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") no-repeat bottom center;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23E8F9FD' d='M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E") no-repeat bottom center;
     background-size: cover;
 }
 .milestone-content {
@@ -417,7 +417,7 @@ body {
 
 /* ===== ABOUT SECTION ===== */
 .about {
-    background: var(--white);
+    background: linear-gradient(180deg, #E8F9FD 0%, #FFF0F7 100%);
     padding: 5rem 0;
     position: relative;
     z-index: 1;
@@ -444,12 +444,13 @@ body {
     gap: 1.5rem;
 }
 .feature-card {
-    background: var(--white);
-    border: 2px solid #f0f0f0;
+    background: rgba(255,255,255,0.8);
+    border: 2px solid rgba(255,255,255,0.9);
     border-radius: var(--radius-lg);
     padding: 2rem 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 .feature-card:hover {
     transform: translateY(-5px) rotate(-1deg);
@@ -468,7 +469,7 @@ body {
 
 /* ===== TEAM SECTION ===== */
 .team {
-    background: linear-gradient(180deg, #FFFDF5 0%, #FFF8FC 100%);
+    background: linear-gradient(180deg, #EAFFF0 0%, #FFF8E8 100%);
     padding: 5rem 0;
     position: relative;
     z-index: 1;
@@ -486,12 +487,13 @@ body {
     gap: 1.5rem;
 }
 .team-card {
-    background: var(--white);
+    background: rgba(255,255,255,0.85);
     border-radius: var(--radius-lg);
     padding: 2.5rem 1.5rem 2rem;
     text-align: center;
     transition: all 0.3s ease;
     border: 3px solid transparent;
+    backdrop-filter: blur(5px);
 }
 .team-card:hover { transform: translateY(-5px) rotate(-1deg); }
 .team-card-1 { box-shadow: 0 8px 25px rgba(233, 30, 140, 0.12); }
@@ -618,7 +620,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: var(--white);
+    background: linear-gradient(180deg, #FFF0F7 0%, #F8E8FD 100%);
     padding: 3rem 0 1.5rem;
     position: relative;
     z-index: 1;
