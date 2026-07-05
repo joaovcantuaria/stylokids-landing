@@ -634,7 +634,7 @@ body {
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
-.footer-logo { width: 100px; height: auto; }
+.footer-logo { width: 180px; height: auto; }
 .footer-info { text-align: left; }
 .footer-info p { font-size: 0.95rem; color: var(--gray); margin-bottom: 0.2rem; }
 .footer-info strong { color: var(--pink); font-family: 'Fredoka', sans-serif; font-size: 1.1rem; }
